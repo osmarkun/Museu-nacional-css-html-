@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>
+			Museu nacional
+	</title>
+	
+	<!--estilo customizado-->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+	<!--Normalize css-->
+	<link rel="stylesheet" type="text/css" href="css3 recursos/normallize.css">
+
+	
+	<!-- script de compatibilidade do flexbox-->
+
+	<!--
+	<script src="flexibility.js"></script>
+	-->
+
+
+	<!--se a versao do navegador internet explorer for abaixo da 9 esse scrip é ativado, navegadores mais antigos não entendem as novas tags por isso devemos usar o html 5 shiv-->
+
+	<!--[if lt IE 9]> 
+	<script src="html-5-shiv/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	
+	<!--inicio conteiner-->
+	<div id ="conteiner">
+		
+		<!--inicio cabeçalho-->
+		<header>
+			
+			<!--inicio logo-->
+			<div id="logo">
+				
+				<h1>
+					<a href="">
+						Museu nacional
+					</a>
+				</h1>
+
+			</div><!--/fim logo logo-->
+
+			<!--inicio barra de navegação-->
+			<nav>
+				
+				<ul>
+					
+					<li>
+						<a href="">
+							Home
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							Exposições
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							Pesquisa
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							Acervo
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							Videos
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							Fotos
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+							Contato
+						</a>
+					</li>
+
+				</ul>
+
+			</nav><!--/fim barra de navegação-->
+
+		</header><!--/fim cabeçalho-->
+		
+		<!--inicio conteudo principal-->
+		<div id="principal">
+		
+			
+			<!--inicio conteudo -->
+			<div id="conteudo">
+				
+				<section id="capa">
+				
+					<img src="img/museu.png">
+				
+				</section>
+
+				<!--inicio section postagens-->
+				<section id="postagens">
+					
+					<!--inicio article videos-->
+					<article id="video">
+						
+						<h3>
+							Video: conheça o museu
+						</h3>	
+
+						<iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>	
+						</iframe>
+
+					</article><!--/fim article videos-->
+
+					<!--inicio article mapa-->
+					<article id="mapa">
+						
+						<h3>
+							Mapa: encontre o museu
+						</h3>
+
+						<iframe src="https://www.google.com/maps/d/embed?mid=1QVy1I2lgwCO8PrfeDbSzcx0ptOA&ehbc=2E312F" width="310" height="170"></iframe>
+
+					</article><!--/fim article mapa-->
+
+					<!--inicio article exposições-->
+					<article id="exposicoes">
+						
+						<h3>
+							Exposições
+						</h3>
+
+						<!--inicio lista-->
+						<ul>
+								
+							<li>
+								<a href="">
+									Os assustadores insetos
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									O crânio da Luzia, a mulher mais antiga do Brasil
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									Preguiça gigante e tigre-dentes-de-sabre
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									Plantas do Brasil central
+								</a>
+							</li>
+
+														<li>
+								<a href="">
+									<strong>
+										Veja todos
+									</strong>
+								</a>
+							</li>
+
+
+						</ul><!--/fim lista-->
+
+
+					</article><!--/fim article exposições-->
+
+					<!--inicio article historia-->
+					<article id="historia">
+
+						<h3>
+							200 anos de história
+						</h3>
+						
+						<p>
+							Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as plantas de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses cinstruiram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórioco Nacional
+						</p>
+						<a href=""> 
+							
+							<strong>
+								Leia mais
+							</strong>
+						</a>
+
+					</article><!--/fim article historia-->
+
+
+				</section><!--/fim section postagens-->
+
+
+			</div><!--/fim conteudo -->
+
+
+			
+			<!--inicio conteudo lateral-->
+			
+			<aside>
+				
+				<!--inicio section depoimento-->
+				<section id="depoimento">
+					
+					<img src="img/depoimento.png">
+				
+				</section><!--/fim section depoimento-->
+
+
+				<!--inicio section visita-->
+				<section id="visita">
+					
+					<h4>
+						Faça uma visita
+					</h4>
+					
+					<!--inicio do formulario-->
+					<form>
+						
+						<fieldset>
+							
+							<legend>
+								Selecione uma data
+							</legend>
+							
+							<label for="data"> Data:</label>
+
+							<input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+
+							<label for="qtd"> Qtd pessoas:</label>
+
+							<input class="campo"  type="text" id="qtd" value="1" style="width:30px ;">
+
+						</fieldset>
+
+						<input class="botao" type="submit" value="Verificar disponibilidade">
+
+					</form><!--/fim do formulario-->
+
+				</section><!--/fim section visita-->
+
+				<!-- inicio  section galeria-->
+				<section id="galeria">
+					
+					<h4>
+						Galeria de fotos
+					</h4>
+
+					<a href="">
+						<img src="img/imagem1.jpg" height="93" width="93" alt="Descricao imagem">
+					</a>
+
+					<a href="">
+						<img src="img/imagem2.jpg" height="93" width="93" alt="Descricao imagem">
+					</a>
+
+					<a href="">
+						<img src="img/imagem3.jpg" height="93" width="93" alt="Descricao imagem">
+					</a>
+
+					<a href="">
+						<img src="img/imagem4.jpg" height="93" width="93" alt="Descricao imagem">
+					</a>
+
+
+				</section><!--/fim  section galeria-->
+
+			</aside><!--/fim conteudo lateral-->
+
+			<!--inicio do rodapé-->
+			<footer>
+				
+				<p>
+				
+					<a href="">
+						Home
+					</a>
+					
+					<a href="">
+						Exposições
+					</a>
+				
+					<a href="">
+						Pesquisa
+					</a>
+					
+					<a href="">
+						Acervo
+					</a>
+					
+					<a href="">
+						Videos
+					</a>
+					
+					<a href="">
+						Fotos
+					</a>
+				
+					<a href="">
+						Contato
+					</a>
+
+				</p>
+
+				<p>
+					2022 -<a href="">  Museu Nacional </a> -
+					Todos os direitos reservados.
+				</p>
+
+			</footer><!--fim do rodapé-->
+
+		</div><!--/fim conteudo principal-->
+
+
+	</div><!--/fim conteiner-->
+
+
+
+
+</body>
+</html>
